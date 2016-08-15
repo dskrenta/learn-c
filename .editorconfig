@@ -1,0 +1,4 @@
+# 4 space indentation for c files
+[*.c]
+indent_style = space
+indent_size = 4
