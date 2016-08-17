@@ -2,6 +2,7 @@
 
 #define WIDTH 10
 #define LENGTH 234
+#define SIZE(x) sizeof(x)/sizeof((x)[0])
 
 void reverseArray(int arr[], int start, int end)
 {
@@ -12,17 +13,23 @@ void reverseArray(int arr[], int start, int end)
       arr[start] = arr[end];
       arr[end] = temp;
       start++;
-      end--:
+      end--;
     }
 }
 
-int add(int num1, int num2) 
+int add(int num1, int num2)
 {
     return num1 + num2;
 }
 
 int main()
 {
+    int balance[3] = {1, 2, 3};
+    for(int i = 0; i < 3; i++)
+    {
+        printf("%i\n", balance[i]);
+    }
+
     int area;
     area = WIDTH * LENGTH;
 
